@@ -1,0 +1,116 @@
+
+html, body{
+    height: 100%;
+}
+body, h1,h2,p {
+    margin: 0;
+    padding: 0;
+}
+.image-left {float: left;
+background-color: #130c36;}
+.image-right {
+    float: right;
+background-color: #130c36;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #e7e3c8;
+    color: #333;
+}
+
+main{
+padding: 20px;
+flex-grow: 1;
+}
+footer{
+background-color: #1f1557;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+.cont{
+    max-width: 1920px;
+    margin: 0 auto; /* 0 сверху/снизу, auto слева/справа */
+    background-color: #fff;
+    min-height: 100%; /* Минимальная высота - 100% высоты родителя (body) */
+    display: flex; /* Включаем Flexbox */
+    flex-direction: column; /* Располагаем элементы в столбик */
+}
+
+header {
+    display: flex;
+    background-color: #1f1557;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {background-color: #130c36;
+padding: 10px;}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: rgb(255, 199, 17);
+}
+.about-me {
+    display: flex;
+    align-items: center; /* Выравниваем фото и текст по центру */
+    gap: 20px; /* Добавляем зазор между фото и текстом */
+}
+image {background-color: #e7e3c8;;}
+@media (max-width:1145px) {
+    header{
+background-color: #333;
+color: #fff;
+padding: 20px;
+flex-direction: column;
+gap: 15px;
+}
+nav{
+background-color: #444;
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+nav a{
+text-align: center;
+border-top: 1px solid #555;
+margin-left: 0;
+margin: 0 10px;
+}
+.about-me{
+    background-color: #111;
+    flex-direction: column;
+    text-align: center;
+}
+.cont{
+    width: 100%;;
+}
+}
+.footer-a {
+    color: #fff;
+    background-color: #1f1557;
+    text-align: center;
+border-top: 1px solid #555;
+margin-left: 0;
+margin: 0 10px;
+}
+.footer-a:hover {
+    background-color: #555;
+    color: rgb(255, 199, 17);}
