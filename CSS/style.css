@@ -6,6 +6,9 @@ body, h1,h2,p {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none; color: #2c275c;
+}
 .image-left {float: left;
 background-color: #130c36;}
 .image-right {
